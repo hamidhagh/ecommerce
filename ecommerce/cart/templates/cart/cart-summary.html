@@ -3,6 +3,7 @@
 
 
 {% load static %}
+{% load product_tags %}
 
 {% load mathfilters %}
 
@@ -124,7 +125,7 @@
 
       <div class="col-12 text-end">
  
-        <div class="h6 fw-bold"> Total price: $ <div id="total" class="d-inline-flex"> {{cart.get_total}} </div></div>
+        <div class="h6 fw-bold"> Total price: $ <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} </div></div>
 
         <br>
 

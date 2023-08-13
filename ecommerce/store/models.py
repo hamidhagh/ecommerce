@@ -1,7 +1,7 @@
 from django.db import models
 from django.urls import reverse
-# Create your models here.
-
+from django.utils.translation import gettext as _
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -38,10 +38,10 @@ class Product(models.Model):
 
     #FK 
 
-    category = models.ForeignKey(Category, related_name='product', on_delete=models.CASCADE, null=True)
+    category = models.ForeignKey(Category, related_name='product', on_delete=models.CASCADE, null=True, verbose_name="category")
 
 
-    title = models.CharField(max_length=250)
+    title = models.CharField(_("title"), max_length=250)
 
     brand = models.CharField(max_length=250, default='un-branded')
 
@@ -53,10 +53,13 @@ class Product(models.Model):
 
     image = models.ImageField(upload_to='images/')
 
+    datetime_created = models.DateTimeField(_('datetime_created'), default=timezone.now())
+    
+    datetime_modified = models.DateTimeField(_('datetime_modified'), auto_now=True)
 
     class Meta:
 
-        verbose_name_plural = 'products'
+        verbose_name_plural = _('products')
 
 
     def __str__(self):
