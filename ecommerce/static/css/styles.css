@@ -1,0 +1,12 @@
+
+.form-layout{
+
+    border-radius: 20px;
+    width: 500px;
+    
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
