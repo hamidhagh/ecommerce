@@ -9,8 +9,9 @@ from django.db.models import Q
 # def store(request, page=1):
 #     all_products = Product.objects.all()
 #     paginator = Paginator(all_products, 1)
-#     products = paginator.get_page(page)
-#     context = {'my_products': products}
+#     page_number = request.get(page)
+#     page_obj = paginator.get_page(page_number)
+#     context = {'my_products': page_obj}
 #     return render(request, 'store/store.html', context=context)
 
 
@@ -21,13 +22,21 @@ class Store(generic.ListView):
 
     context_object_name = 'my_products'
 
-    paginate_by = 4
+    paginate_by = 1
 
 
+class AscendingPrice(generic.ListView):
+    queryset = Product.objects.all().order_by('price')
 
-def ascending_price(request):
-    all_products = Product.objects.all().order_by('price')
-    return render(request, 'store/store.html', { "my_products" : all_products})
+    template_name = 'store/store.html'
+
+    context_object_name = 'my_products'
+
+    paginate_by = 1
+    
+# def ascending_price(request):
+#     all_products = Product.objects.all().order_by('price')
+#     return render(request, 'store/store.html', { "my_products" : all_products})
 
 
 '''---------------------------------------------------------------------------------------------------------'''

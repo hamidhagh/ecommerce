@@ -115,19 +115,24 @@
         </div>
         
         
-        <nav>
-          <ul class="pagination justify-content-center">
+        <div class="pagination justify-content-center">
+          <span class="step-links">
               {% if page_obj.has_previous %}
-                  <li class="page-item "><a class="page-link" href="?page={{ page_obj.previous_page_number }}">{% trans "Previous"%}</a></li>
+                  <a href="?page=1">&laquo; first</a>
+                  <a href="?page={{ page_obj.previous_page_number }}">previous</a>
               {% endif %}
-              <li class="page-item active"><a class="page-link" href="{% url 'store' %}">1</a></li>
+      
+              <span class="current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+              </span>
+      
               {% if page_obj.has_next %}
-                  <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">{{page_obj.next_page_number}}</a></li>
-                  {% comment %} <li class="page-item"><a class="page-link" href="{{ page_obj.next_page_number }}">3</a></li> {% endcomment %}
-                  <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">{% trans "Next"%}</a></li>
+                  <a href="?page={{ page_obj.next_page_number }}">next</a>
+                  <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
               {% endif %}
-          </ul>
-        </nav>
+          </span>
+        </div>
+
       </div>
 
 
