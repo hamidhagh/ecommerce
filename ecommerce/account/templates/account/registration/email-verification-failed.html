@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% block content %}
 
 <style>
@@ -32,11 +34,11 @@
             <br> <br>
    
 
-            <h5> <strong> Email verification failed! </strong> </h5>
+            <h5> <strong> {% trans 'Email verification failed!' %} </strong> </h5>
 
             <hr>
 
-            <p> Please contact admin support. </p>
+            <p> {% trans 'Please contact admin support.' %} </p>
 
 
         </div>

@@ -3,6 +3,9 @@
 
 
 {% load static %}
+
+{% load i18n %}
+
 {% load product_tags %}
 
 {% load mathfilters %}
@@ -14,7 +17,7 @@
     
     <div class="container">
       
-      <h1 class="h5"> Shopping cart </h1>
+      <h1 class="h5"> {% trans 'Shopping cart' %} </h1>
 
 	    <hr>
 
@@ -50,7 +53,7 @@
               
                 <div class="row p-3">
               
-                <div class="col-6"> Product </div>
+                <div class="col-6"> {% trans 'Product' %} </div>
               
                 <div class="col-6 text-end"><span class="h6 fw-bold">$ {{product.price|mul:item.qty}} </span></div>
             
@@ -64,7 +67,7 @@
                 
                 <div class="col-12">
                   
-                  <label for="select">Qty</label>
+                  <label for="select">{% trans 'Qty' %}</label>
 
                   &nbsp; 
                   
@@ -76,13 +79,13 @@
                   
                     </option>
                   
-                    <option value="">1</option>
+                    <option value="">{{1|persian_numbers}}</option>
                   
-                    <option value="">2</option>
+                    <option value="">{{2|persian_numbers}}</option>
                   
-                    <option value="">3</option>
+                    <option value="">{{3|persian_numbers}}</option>
                   
-                    <option value="">4</option>
+                    <option value="">{{4|persian_numbers}}</option>
                   
                   </select>
                   
@@ -90,7 +93,7 @@
 
                   <button type="button" data-index="{{product.id}}"
                     class="btn btn-primary btn-sm update-button">
-                    Update
+                    {% trans 'Update' %}
                   
                   </button>
                   
@@ -98,7 +101,7 @@
 
                   <button type="button" data-index="{{product.id}}"
                     class="btn btn-danger btn-sm delete-button">
-                    Delete
+                    {% trans 'Delete' %}
         
                   </button>
         

@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% load crispy_forms_tags %}
 
 
@@ -31,11 +33,11 @@
 
         <div class="container bg-white shadow-md p-5 form-layout">
 
-            <h3> Account deletion </h3>
+            <h3> {% trans 'Account deletion' %}% </h3>
 
             <hr>
 
-            <p> Are you sure that you want to delete your account? </p>
+            <p> {% trans 'Are you sure that you want to delete your account?' %} </p>
 
 
             <br>
@@ -46,11 +48,11 @@
 
 
                 
-                <button type="submit" class="btn btn-danger navbar-btn text-white"> &nbsp; Delete your account </button>
+                <button type="submit" class="btn btn-danger navbar-btn text-white"> &nbsp; {% trans 'Delete your account' %} </button>
 
                 <br> <br>
 
-                <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'profile-management' %}"> <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; Go back </a>
+                <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'profile-management' %}"> <i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp; {% trans 'Go back' %} </a>
 
             </form>
 

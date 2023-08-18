@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% load crispy_forms_tags %}
 
 
@@ -31,7 +33,7 @@
 
         <div class="container bg-white shadow-md p-5 form-layout">
 
-            <h3> Login to your account </h3>
+            <h3> {% trans 'Login to your account' %} </h3>
 
             <hr>
 
@@ -52,7 +54,7 @@
                 <br> 
 
                 
-                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> <i class="fa fa-key" aria-hidden="true"></i> &nbsp; Login </button>
+                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> <i class="fa fa-key" aria-hidden="true"></i> &nbsp; {% trans 'Login' %} </button>
 
                 <br> <br>
 
@@ -60,12 +62,12 @@
 
                 <div class="text-center">
 
-                    <a href="{% url 'register' %}"> Don't have an account? </a>
+                    <a href="{% url 'register' %}"> {% trans "Don't have an account?" %} </a>
 
 
                     <br> <br>
 
-                    <a href="{% url 'reset_password' %}"> Forgotten your password? </a>
+                    <a href="{% url 'reset_password' %}"> {% trans 'Forgotten your password?' %} </a>
 
 
                 </div>

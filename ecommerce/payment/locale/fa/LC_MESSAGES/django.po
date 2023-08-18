@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-18 17:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\payment\templates\payment\checkout.html:34
+msgid "Complete your order"
+msgstr "سفارش خود را کامل کنید"
+
+#: .\payment\templates\payment\checkout.html:36
+msgid "Please enter in the relevant information below."
+msgstr "لطفا مشخصات خود را وارد کنید."
+
+#: .\payment\templates\payment\checkout.html:116
+msgid "Complete order"
+msgstr "تکمیل سفارش"
+
+#: .\payment\templates\payment\payment-failed.html:3
+msgid "payment failed"
+msgstr "پرداخت ناموفق"
+
+#: .\payment\templates\payment\payment-success.html:3
+msgid "payment success"
+msgstr "پرداخت موفق"

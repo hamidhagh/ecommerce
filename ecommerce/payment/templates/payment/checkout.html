@@ -4,6 +4,7 @@
 
 {% load static %}
 
+{% load i18n %}
 
 {% block content %}
 
@@ -30,9 +31,9 @@
 
                 <div>
 
-                    <h3> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> &nbsp; Complete your order </h3>
+                    <h3> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> &nbsp; {% trans 'Complete your order' %} </h3>
 
-                    <p> Please enter in the relevant information below. </p>
+                    <p> {% trans 'Please enter in the relevant information below.' %} </p>
  
 
 
@@ -112,7 +113,7 @@
 
 
 
-               <button id="complete-order" type="submit" class="btn btn-primary navbar-btn text-white"> &nbsp; Complete order </button>
+               <button id="complete-order" type="submit" class="btn btn-primary navbar-btn text-white"> &nbsp; {% trans 'Complete order' %} </button>
                
 
                 <br>

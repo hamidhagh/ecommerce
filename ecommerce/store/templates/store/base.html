@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 
 <html>
@@ -70,7 +71,7 @@
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     
-                        Categories
+                        {% trans 'Categories' %}
                     
                     </a>
                     
@@ -101,6 +102,8 @@
 
         </div>
 
+        
+
         <div class="col-lg-4 col-6 text-left">
             <form action="{% url 'search_product' %} ">
             {% csrf_token %}
@@ -115,7 +118,52 @@
             </form>
         </div>
 
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+                
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                        {% trans 'Language'%}
+                    
+                    </a>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <li>
+                            
+                            <a class="dropdown-item" href="{% url 'change-language' %}?lang=en&next=/en/{{request.path|slice:'4:'}}"> EN </a>
+                        
+                        </li>
+
+                        <li>
+                            
+                            <a class="dropdown-item" href="{% url 'change-language' %}?lang=fa&next=/fa/{{request.path|slice:'4:'}}"> FA </a>
+                        
+                        </li>
+                        
+                        {% for category in all_categories %}
+                        
+                        <li>
+
+                            <a class="dropdown-item" href="{{category.get_absolute_url}}"> {{ category.name | capfirst }} </a>
+
+                        </li>
+
+                    {% endfor %}
+        
+                    
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+        
         <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
 
             
@@ -125,7 +173,7 @@
 
                     <li class="nav-item">
                 
-                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'dashboard' %}"> <i class="fa fa-home" aria-hidden="true"></i> &nbsp; Dashboard </a>
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'dashboard' %}"> <i class="fa fa-home" aria-hidden="true"></i> &nbsp; {% trans 'Dashboard'%} </a>
 
                     </li>
 
@@ -133,7 +181,7 @@
 
                     <li class="nav-item">
                 
-                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"> Register </a>
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'register' %}"> {% trans 'Register'%} </a>
 
                     </li>
 
@@ -146,7 +194,7 @@
                     <li class="nav-item">
                         
 
-                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'user-logout' %}"> <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; Logout </a>
+                        <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'user-logout' %}"> <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; {% trans 'Logout'%} </a>
 
                     </li>
 
@@ -155,7 +203,7 @@
 
                         <li class="nav-item">
 
-                            <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"> Login </a>
+                            <a class="btn btn-alert navbar-btn text-white" type="button"  href="{% url 'my-login' %}"> {% trans 'Login'%} </a>
 
                         </li>
 

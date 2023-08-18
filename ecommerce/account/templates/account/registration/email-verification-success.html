@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% block content %}
 
 <style>
@@ -32,11 +34,11 @@
             <br> <br>
    
 
-            <h5> <strong> Your account is now active! </strong> </h5>
+            <h5> <strong> {% trans 'Your account is now active!' %} </strong> </h5>
 
             <hr>
 
-            <p> Please proceed to login. </p>
+            <p> {% trans 'Please proceed to login.' %} </p>
 
 
         </div>

@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% block content %}
 
 <style>
@@ -32,11 +34,11 @@
             <br> <br>
    
 
-            <h5> <strong> A verification link was sent to your email! </strong> </h5>
+            <h5> <strong> {% trans 'A verification link was sent to your email!' %} </strong> </h5>
 
             <hr>
 
-            <p> Please check your email. </p>
+            <p> {% trans 'Please check your email.' %} </p>
 
 
         </div>

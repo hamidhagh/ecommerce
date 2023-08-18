@@ -1,11 +1,11 @@
 from django.core.paginator import Paginator
 from django.views import generic
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Category, Product
 from django.shortcuts import get_object_or_404
 from django.db.models import Q
-
+from django.utils.translation import activate
 # def store(request, page=1):
 #     all_products = Product.objects.all()
 #     paginator = Paginator(all_products, 1)
@@ -13,6 +13,12 @@ from django.db.models import Q
 #     page_obj = paginator.get_page(page_number)
 #     context = {'my_products': page_obj}
 #     return render(request, 'store/store.html', context=context)
+
+def change_language(request):
+
+    activate(request.GET.get('lang'))
+
+    return redirect(request.GET.get('next'))
 
 
 class Store(generic.ListView):
@@ -37,6 +43,15 @@ class AscendingPrice(generic.ListView):
 # def ascending_price(request):
 #     all_products = Product.objects.all().order_by('price')
 #     return render(request, 'store/store.html', { "my_products" : all_products})
+
+class DescendingPrice(generic.ListView):
+    queryset = Product.objects.all().order_by('-price')
+
+    template_name = 'store/store.html'
+
+    context_object_name = 'my_products'
+
+    paginate_by = 1
 
 
 '''---------------------------------------------------------------------------------------------------------'''

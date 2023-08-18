@@ -3,6 +3,10 @@
 
 {% load static %}
 
+{% load i18n %}
+
+{% load product_tags %}
+
 {% block content %}
 
 <div class="container">
@@ -37,7 +41,7 @@
 
                         <div class="row p-3">
 
-                            <div class="col-6"> Price </div>
+                            <div class="col-6"> {% trans 'Price' %} </div>
 
                             <div class="col-6 text-end"><span class="h4 fw-bold">$ {{ product.price }} </span></div>
 
@@ -52,19 +56,19 @@
                             <div class="col-6">
               
                                
-                                <label for="select">Qty</label>
+                                <label for="select">{% trans 'Qty' %}</label>
                                 
                                 &nbsp; 
                                
                                 <select id="select">
               
-                                    <option value="1">1</option>
+                                    <option value="1">{{1|persian_numbers}}</option>
               
-                                    <option value="2">2</option>
+                                    <option value="2">{{2|persian_numbers}}</option>
               
-                                    <option value="3">3</option>
+                                    <option value="3">{{3|persian_numbers}}</option>
               
-                                    <option value="4">4</option>
+                                    <option value="4">{{4|persian_numbers}}</option>
               
                                 </select>
 
@@ -74,7 +78,7 @@
                                 
                                 <button type="button" id="add-button" value="{{product.id}}" class="btn btn-secondary btn-sm">
                         
-                                    <i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add to cart 
+                                    <i class="fa fa-plus" aria-hidden="true"></i> &nbsp; {% trans 'Add to cart'%}
                             
                                 </button> 
                             

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-13 14:11+0200\n"
+"POT-Creation-Date: 2023-08-18 17:52+0200\n"
 "PO-Revision-Date: 2023-08-13 14:26+0330\n"
 "Last-Translator:   <hamid@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,26 +18,110 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\store\templates\store\base.html:108
+#: .\store\models.py:44
+msgid "title"
+msgstr "نام"
+
+#: .\store\models.py:56
+msgid "datetime_created"
+msgstr ""
+
+#: .\store\models.py:58
+msgid "datetime_modified"
+msgstr ""
+
+#: .\store\models.py:62
+msgid "products"
+msgstr "محصولات"
+
+#: .\store\templates\store\base.html:38
+msgid "Edenthought"
+msgstr ""
+
+#: .\store\templates\store\base.html:74
+msgid "Categories"
+msgstr "دسته بندی ها"
+
+#: .\store\templates\store\base.html:111
 msgid "Search for products"
 msgstr "جست و جوی محصولات"
 
+#: .\store\templates\store\base.html:130
+msgid "Language"
+msgstr "زبان"
+
+#: .\store\templates\store\base.html:176
+msgid "Dashboard"
+msgstr "اکانت"
+
+#: .\store\templates\store\base.html:184
+msgid "Register"
+msgstr "ثبت نام"
+
+#: .\store\templates\store\base.html:197
+msgid "Logout"
+msgstr "خروج"
+
+#: .\store\templates\store\base.html:206
+msgid "Login"
+msgstr "ورود"
+
+#: .\store\templates\store\product-info.html:44
+msgid "Price"
+msgstr "قیمت"
+
+#: .\store\templates\store\product-info.html:59
+msgid "Qty"
+msgstr "تعداد"
+
+#: .\store\templates\store\product-info.html:81
+msgid "Add to cart"
+msgstr "افزودن به سبد خرید"
+
+#: .\store\templates\store\store.html:37
+msgid "Create an account"
+msgstr "ثبت نام"
+
+#: .\store\templates\store\store.html:58
+msgid "sort"
+msgstr "مرتب سازی"
+
 #: .\store\templates\store\store.html:62
 msgid "ascending price"
-msgstr ""
+msgstr "قیمت: از ارزان به گران"
 
 #: .\store\templates\store\store.html:63
 msgid "descending price"
-msgstr ""
+msgstr "قیمت: از گران به ارزان"
 
-#: .\store\templates\store\store.html:109
+#: .\store\templates\store\store.html:70
+msgid "All products"
+msgstr "همه ی محصولات"
+
+#: .\store\templates\store\store.html:111
 msgid "Not Found"
-msgstr ""
+msgstr "محصولی یافت نشد!"
 
-#: .\store\templates\store\store.html:121
-msgid "Previous"
-msgstr ""
+#: .\store\templates\store\store.html:123
+msgid "first"
+msgstr "اولین"
+
+#: .\store\templates\store\store.html:124
+msgid "previous"
+msgstr "قبلی"
 
 #: .\store\templates\store\store.html:128
-msgid "Next"
-msgstr ""
+msgid "Page"
+msgstr "صفحه"
+
+#: .\store\templates\store\store.html:128
+msgid "of"
+msgstr "از"
+
+#: .\store\templates\store\store.html:132
+msgid "next"
+msgstr "بعدی"
+
+#: .\store\templates\store\store.html:133
+msgid "last"
+msgstr "آخرین"
