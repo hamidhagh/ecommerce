@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 17:52+0200\n"
+"POT-Creation-Date: 2023-09-01 14:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,3 +36,11 @@ msgstr "به روز رسانی"
 #: .\cart\templates\cart\cart-summary.html:104
 msgid "Delete"
 msgstr "حذف"
+
+#: .\cart\templates\cart\cart-summary.html:131
+msgid "Total price:"
+msgstr "قیمت کل:"
+
+#: .\cart\templates\cart\cart-summary.html:135
+msgid "Proceed to checkout"
+msgstr "نهایی کردن سفارش"

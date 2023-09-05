@@ -54,12 +54,38 @@ class DescendingPrice(generic.ListView):
     paginate_by = 1
 
 
-'''---------------------------------------------------------------------------------------------------------'''
+class AscendingTime(generic.ListView):
+    queryset = Product.objects.all().order_by('datetime_created')
+
+    template_name = 'store/store.html'
+
+    context_object_name = 'my_products'
+
+    paginate_by = 1
+
+
+
+class DescendingTime(generic.ListView):
+    queryset = Product.objects.all().order_by('-datetime_created')
+
+    template_name = 'store/store.html'
+
+    context_object_name = 'my_products'
+
+    paginate_by = 1
+
+
+
+
+
 def categories(request):
     all_categories = Category.objects.all()
     return {'all_categories': all_categories}
 
-'''---------------------------------------------------------------------------------------------------------'''
+
+
+
+
 def list_category(request, category_slug=None):
 
     category = get_object_or_404(Category, slug=category_slug)

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 17:52+0200\n"
+"POT-Creation-Date: 2023-09-03 20:33+0200\n"
 "PO-Revision-Date: 2023-08-13 14:26+0330\n"
 "Last-Translator:   <hamid@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,51 +18,101 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: .\store\models.py:44
+#: .\store\models.py:9
+msgid "name"
+msgstr "نام"
+
+#: .\store\models.py:11 .\store\models.py:51
+msgid "slug"
+msgstr "اسلاگ"
+
+#: .\store\models.py:16
+msgid "categories"
+msgstr "دسته بندی ها"
+
+#: .\store\models.py:17 .\store\models.py:42
+msgid "category"
+msgstr "دسته بندی"
+
+#: .\store\models.py:45
 msgid "title"
 msgstr "نام"
 
-#: .\store\models.py:56
+#: .\store\models.py:47
+msgid "brand"
+msgstr "برند"
+
+#: .\store\models.py:49
+msgid "description"
+msgstr "توضیحات"
+
+#: .\store\models.py:53
+msgid "price"
+msgstr "قیمت"
+
+#: .\store\models.py:55
+msgid "image"
+msgstr "عکس"
+
+#: .\store\models.py:57
 msgid "datetime_created"
-msgstr ""
+msgstr "زمان ساخت"
 
-#: .\store\models.py:58
+#: .\store\models.py:59
 msgid "datetime_modified"
-msgstr ""
+msgstr "زمان تغییر"
 
-#: .\store\models.py:62
+#: .\store\models.py:63
 msgid "products"
 msgstr "محصولات"
 
+#: .\store\models.py:64
+msgid "product"
+msgstr "محصول"
+
 #: .\store\templates\store\base.html:38
-msgid "Edenthought"
+msgid "BlueBerry"
 msgstr ""
 
-#: .\store\templates\store\base.html:74
+#: .\store\templates\store\base.html:77
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: .\store\templates\store\base.html:111
+#: .\store\templates\store\base.html:93
+#, fuzzy, python-format
+#| msgid "categories"
+msgid " %(category_name)s "
+msgstr "دسته بندی ها"
+
+#: .\store\templates\store\base.html:115
 msgid "Search for products"
 msgstr "جست و جوی محصولات"
 
-#: .\store\templates\store\base.html:130
+#: .\store\templates\store\base.html:181
 msgid "Language"
 msgstr "زبان"
 
-#: .\store\templates\store\base.html:176
+#: .\store\templates\store\base.html:189
+msgid "English"
+msgstr "انگلیسی"
+
+#: .\store\templates\store\base.html:195
+msgid "Persian"
+msgstr "فارسی"
+
+#: .\store\templates\store\base.html:226
 msgid "Dashboard"
 msgstr "اکانت"
 
-#: .\store\templates\store\base.html:184
+#: .\store\templates\store\base.html:234
 msgid "Register"
 msgstr "ثبت نام"
 
-#: .\store\templates\store\base.html:197
+#: .\store\templates\store\base.html:247
 msgid "Logout"
 msgstr "خروج"
 
-#: .\store\templates\store\base.html:206
+#: .\store\templates\store\base.html:256
 msgid "Login"
 msgstr "ورود"
 
@@ -78,50 +128,57 @@ msgstr "تعداد"
 msgid "Add to cart"
 msgstr "افزودن به سبد خرید"
 
-#: .\store\templates\store\store.html:37
-msgid "Create an account"
-msgstr "ثبت نام"
-
-#: .\store\templates\store\store.html:58
+#: .\store\templates\store\store.html:60
 msgid "sort"
 msgstr "مرتب سازی"
 
-#: .\store\templates\store\store.html:62
+#: .\store\templates\store\store.html:64
 msgid "ascending price"
 msgstr "قیمت: از ارزان به گران"
 
-#: .\store\templates\store\store.html:63
+#: .\store\templates\store\store.html:65
 msgid "descending price"
 msgstr "قیمت: از گران به ارزان"
 
-#: .\store\templates\store\store.html:70
+#: .\store\templates\store\store.html:66
+msgid "ascending time"
+msgstr "زمان ایجاد: از قدیم به جدید"
+
+#: .\store\templates\store\store.html:67
+msgid "descending time"
+msgstr "زمان ایجاد: از جدید به قدیم"
+
+#: .\store\templates\store\store.html:74
 msgid "All products"
 msgstr "همه ی محصولات"
 
-#: .\store\templates\store\store.html:111
+#: .\store\templates\store\store.html:115
 msgid "Not Found"
 msgstr "محصولی یافت نشد!"
 
-#: .\store\templates\store\store.html:123
+#: .\store\templates\store\store.html:127
 msgid "first"
 msgstr "اولین"
 
-#: .\store\templates\store\store.html:124
+#: .\store\templates\store\store.html:128
 msgid "previous"
 msgstr "قبلی"
 
-#: .\store\templates\store\store.html:128
+#: .\store\templates\store\store.html:132
 msgid "Page"
 msgstr "صفحه"
 
-#: .\store\templates\store\store.html:128
+#: .\store\templates\store\store.html:132
 msgid "of"
 msgstr "از"
 
-#: .\store\templates\store\store.html:132
+#: .\store\templates\store\store.html:136
 msgid "next"
 msgstr "بعدی"
 
-#: .\store\templates\store\store.html:133
+#: .\store\templates\store\store.html:137
 msgid "last"
 msgstr "آخرین"
+
+#~ msgid "Create an account"
+#~ msgstr "ثبت نام"

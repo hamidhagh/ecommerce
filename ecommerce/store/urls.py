@@ -8,5 +8,7 @@ urlpatterns = [
     path('search/<slug:category_slug>/', views.list_category, name='list-category'),
     path('ascending_price/', views.AscendingPrice.as_view(), name='ascending-price'),
     path('descending_price/', views.DescendingPrice.as_view(), name='descending-price'),
+    path('ascending_time/', views.AscendingTime.as_view(), name='ascending-time'),
+    path('descending_time/', views.DescendingTime.as_view(), name='descending-time'),
 
 ]

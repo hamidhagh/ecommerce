@@ -14,12 +14,12 @@
   
     <section class="py-4 text-center container">
 
-        <div class="row py-lg-5">
+        <div class="row py-lg-1">
         
             <div class="col-lg-6 col-md-8 mx-auto">
                 
-
-                <h4> Edenthought... Simplicity at it's finest. </h4>
+                <img class="img-fluid" alt="Responsive image" src="{% static 'media/images/BlueBerry2.png' %}">
+                {% comment %} <h4> Edenthought... Simplicity at it's finest. </h4>
 
 
                 <br>
@@ -29,12 +29,12 @@
 
                 Browse our extensive collection of unique items.
 
-                </p>
+                </p> {% endcomment %}
 
 
                 <br>
         
-                <a href="{% url 'register' %}" class="btn btn-primary my-2"> <i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp; {% trans 'Create an account' %} </a>
+                {% comment %} <a href="{% url 'register' %}" class="btn btn-primary my-2"> <i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp; {% trans 'Create an account' %} </a> {% endcomment %}
                 
                 
             </div>
@@ -61,13 +61,15 @@
               <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" style="">
                 <a class="dropdown-item" href="{% url 'ascending-price' %}">{% trans "ascending price" %} </a>
                 <a class="dropdown-item" href="{% url 'descending-price' %}">{% trans "descending price" %} </a>
+                <a class="dropdown-item" href="{% url 'ascending-time' %}">{% trans "ascending time" %} </a>
+                <a class="dropdown-item" href="{% url 'descending-time' %}">{% trans "descending time" %} </a>
               </div>
             </div>
           </div>
           
           
           
-          <div class="pb-3 h5"> {% trans 'All products' %} </div>
+          <div dir="auto" class="pb-3 h5"> {% trans 'All products' %} </div>
 
 
           <hr>
@@ -117,7 +119,7 @@
         </div>
         
         
-        <div class="pagination justify-content-center dir="rtl" ">
+        <div class="pagination justify-content-center" dir="auto">
           <span class="step-links">
               {% if page_obj.has_previous %}
                   <a href="?page=1">&laquo; {% trans 'first' %}</a>

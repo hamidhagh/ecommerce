@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-03 19:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\account\templates\account\dashboard.html:34
+msgid "Welcome"
+msgstr "خوش آمدید"
+
+#: .\account\templates\account\dashboard.html:38
+msgid "This is your dashboard where you can perform any of the following:"
+msgstr "اینجا صفحه شخصی شماست که می توانید اقدامات زیر را انجام دهید:"
+
+#: .\account\templates\account\dashboard.html:40
+#: .\account\templates\account\dashboard.html:84
+msgid "Track your orders"
+msgstr "پیگیری سفارشات"
+
+#: .\account\templates\account\dashboard.html:41
+#: .\account\templates\account\dashboard.html:66
+msgid "Manage your account"
+msgstr "مدیریت حساب کاربری"
+
+#: .\account\templates\account\dashboard.html:50
+#: .\account\templates\account\dashboard.html:57
+#: .\account\templates\account\manage-shipping.html:33
+msgid "Manage shipping"
+msgstr "مدیریت آدرس"
+
+#: .\account\templates\account\dashboard.html:54
+msgid "Enter in a shipping address"
+msgstr "یک آدرس وارد کنید."
+
+#: .\account\templates\account\dashboard.html:70
+msgid "Update or delete your account"
+msgstr "به روز رسانی یا حذف حساب کاربری"
+
+#: .\account\templates\account\dashboard.html:76
+#: .\account\templates\account\profile-management.html:36
+msgid "Profile management"
+msgstr "مدیریت پروفایل"
+
+#: .\account\templates\account\dashboard.html:88
+msgid "Track all of your orders here."
+msgstr "سفارشات خود را در اینجا مشاهده کنید."
+
+#: .\account\templates\account\dashboard.html:90
+msgid "My orders"
+msgstr "سفارشات من"
+
+#: .\account\templates\account\delete-account.html:36
+msgid "Account deletion"
+msgstr "حذف حساب کاربری"
+
+#: .\account\templates\account\delete-account.html:40
+msgid "Are you sure that you want to delete your account?"
+msgstr "آیا مطمعن هستید می خواهید جساب کاربری خود را حذف کنید؟"
+
+#: .\account\templates\account\delete-account.html:51
+#: .\account\templates\account\profile-management.html:86
+#: .\account\templates\account\profile-management.html:92
+msgid "Delete your account"
+msgstr "حذف حساب کاربری"
+
+#: .\account\templates\account\delete-account.html:55
+msgid "Go back"
+msgstr "بازگشت"
+
+#: .\account\templates\account\manage-shipping.html:35
+msgid "Please fill in your shipping address."
+msgstr "لطفا مشخصات آدرس خود را وارد کنید."
+
+#: .\account\templates\account\manage-shipping.html:85
+msgid "Update shipping address"
+msgstr "به روز رسانی آدرس"
+
+#: .\account\templates\account\my-login.html:36
+msgid "Login to your account"
+msgstr "ورود به حساب کاربری"
+
+#: .\account\templates\account\my-login.html:57
+#: .\account\templates\account\password\password-reset-complete.html:38
+msgid "Login"
+msgstr "ورود"
+
+#: .\account\templates\account\my-login.html:65
+msgid "Don't have an account?"
+msgstr "حساب کاربری ندارید؟"
+
+#: .\account\templates\account\my-login.html:70
+msgid "Forgotten your password?"
+msgstr "رمز عبور خود را فراموش کرده اید؟"
+
+#: .\account\templates\account\password\password-reset-complete.html:32
+msgid "Password reset complete"
+msgstr "ریست رمز عبور انجام شد."
+
+#: .\account\templates\account\password\password-reset-complete.html:36
+msgid "Your password has been set. You may proceed to login"
+msgstr "رمز عبور شما ثبت شد. می توانید به حساب کاربری خود وارد شوید."
+
+#: .\account\templates\account\password\password-reset-form.html:32
+msgid "Enter your new password:"
+msgstr "پسورد جدید خود را وارد کنید."
+
+#: .\account\templates\account\password\password-reset-form.html:36
+msgid ""
+"Please enter your new password twice so that we can verify that\n"
+"\n"
+"            you typed it in correctly!"
+msgstr "لطفا رمز عبور جدید خود را وارد کنید تا آن را تایید کنیم."
+
+#: .\account\templates\account\password\password-reset-form.html:50
+msgid "Update password"
+msgstr "به روز رسانی رمز عبور"
+
+#: .\account\templates\account\password\password-reset-sent.html:34
+msgid "We've emailed you instructions for setting your password."
+msgstr "لینک تغییر رمز عبور برایتان ایمیل شد."
+
+#: .\account\templates\account\password\password-reset-sent.html:36
+#: .\account\templates\account\registration\email-verification-sent.html:41
+msgid "Please check your email."
+msgstr "لطفا ایمیل خود را چک کنید."
+
+#: .\account\templates\account\password\password-reset.html:32
+msgid "Password reset"
+msgstr "ریست پسورد"
+
+#: .\account\templates\account\password\password-reset.html:36
+msgid ""
+"Forgotten your password? Enter your email address below, \n"
+"            \n"
+"            and we'll email instructions for setting a new one."
+msgstr ""
+"رمز عبور خود را فراموش کرده اید؟ ایمیل خود را در زیر وارد کنید تا برایتان "
+"لینک تغییر رمز عبور را ایمیل کنیم."
+
+#: .\account\templates\account\password\password-reset.html:51
+msgid "Send password reset link"
+msgstr "ارسال لینک ریست پسورد"
+
+#: .\account\templates\account\profile-management.html:38
+msgid "Manage your account effectively."
+msgstr "حساب کاربری خود را مدیریت کنید."
+
+#: .\account\templates\account\profile-management.html:50
+#: .\account\templates\account\profile-management.html:73
+msgid "Update your account"
+msgstr "به روز رسانی حساب کاربری"
+
+#: .\account\templates\account\profile-management.html:52
+msgid "Feel free to make changes to your account."
+msgstr "می توانید تغییراتی در حساب کاربری خود انجام دهید."
+
+#: .\account\templates\account\profile-management.html:88
+msgid "Proceed if you wish to delete your account."
+msgstr "می خواهید حساب کاربری خود را حذف کنید؟"
+
+#: .\account\templates\account\registration\email-verification-failed.html:37
+msgid "Email verification failed!"
+msgstr "تایید ایمیل ناموفق"
+
+#: .\account\templates\account\registration\email-verification-failed.html:41
+msgid "Please contact admin support."
+msgstr "لطفا با ادمین تماس حاصل فرمایید."
+
+#: .\account\templates\account\registration\email-verification-sent.html:37
+msgid "A verification link was sent to your email!"
+msgstr "لینک تایید ایمیل به شما ارسال شد."
+
+#: .\account\templates\account\registration\email-verification-success.html:37
+msgid "Your account is now active!"
+msgstr "حساب کاربری شما فعال شد."
+
+#: .\account\templates\account\registration\email-verification-success.html:41
+msgid "Please proceed to login."
+msgstr "لطفا وارد حساب کاربری خود شوید."
+
+#: .\account\templates\account\registration\email-verification.html:4
+msgid "Hi,"
+msgstr "سلام"
+
+#: .\account\templates\account\registration\email-verification.html:6
+msgid "Thank you for registering on our website."
+msgstr "از ثبت نام شما در سایت متشکریم"
+
+#: .\account\templates\account\registration\email-verification.html:8
+msgid "Please verify your email by clicking the link below:"
+msgstr "لطفا ایمیل خود را با کلیک بر روی لینک زیر تایید کنید"
+
+#: .\account\templates\account\registration\register.html:36
+msgid "Create your account"
+msgstr "ثبت نام"
+
+#: .\account\templates\account\registration\register.html:38
+msgid "Purchase your favourite items today!"
+msgstr "محصولات مورد علاقه ی خود را امروز بخرید!"
+
+#: .\account\templates\account\registration\register.html:67
+msgid "Create account"
+msgstr "ثبت نام"
+
+#: .\account\templates\account\registration\register.html:73
+msgid "Already have an account?"
+msgstr "از قبل حساب کاربری دارید؟"
+
+#~ msgid "Logout success"
+#~ msgstr "خروج از حساب کاربری با موفیقیت انجام شد."
+
+#~ msgid "Account updated"
+#~ msgstr "حساب کاربری به روز رسانی گردید!"
+
+#~ msgid "Account deleted"
+#~ msgstr "حساب کاربری حذف گردید!"

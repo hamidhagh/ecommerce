@@ -15,7 +15,7 @@
 
 <main class="pt-5">
     
-    <div class="container">
+    <div class="container" dir="auto">
       
       <h1 class="h5"> {% trans 'Shopping cart' %} </h1>
 
@@ -126,13 +126,13 @@
     <!-- LP -->
 
 
-      <div class="col-12 text-end">
+      <div class="col-12 text-end" dir="auto">
  
-        <div class="h6 fw-bold"> Total price: $ <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} </div></div>
+        <div class="h6 fw-bold"> {% trans 'Total price:' %} $ <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} </div></div>
 
         <br>
 
-        <a href="{% url 'checkout' %}" class="btn btn-primary my-2"> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> &nbsp; Proceed to checkout </a>
+        <a href="{% url 'checkout' %}" class="btn btn-primary my-2"> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> &nbsp; {% trans 'Proceed to checkout' %} </a>
         
       </div>
 

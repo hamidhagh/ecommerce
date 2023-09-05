@@ -1,10 +1,11 @@
+{% load i18n %}
 {% autoescape off %}
 
-Hi,
+{% blocktranslate %}Hi,{% endblocktranslate %}
 
-Thank you for registering on our website.
+{% blocktranslate %}Thank you for registering on our website.{% endblocktranslate %}
 
-Please verify your email by clicking the link below:
+{% blocktranslate %}Please verify your email by clicking the link below:{% endblocktranslate %}
 
 
 http://{{domain}}{% url 'email-verification' uidb64=uid token=token %}

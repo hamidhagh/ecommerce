@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% load crispy_forms_tags %}
 
 
@@ -26,11 +28,11 @@
 
         <br>
 
-        <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="container bg-white shadow-md p-5 form-layout" dir="auto">
 
-            <h3> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> &nbsp; Manage shipping </h3>
+            <h3> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> &nbsp; {% trans 'Manage shipping' %} </h3>
 
-            <p> Please fill in your shipping address. </p>
+            <p> {% trans 'Please fill in your shipping address.' %} </p>
 
             <hr>
 
@@ -80,7 +82,7 @@
                 <br>
 
 
-                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> Update shipping address </button>
+                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> {% trans 'Update shipping address' %} </button>
 
 
 

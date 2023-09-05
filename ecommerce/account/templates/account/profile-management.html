@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% load crispy_forms_tags %}
 
 
@@ -29,11 +31,11 @@
 
         <br>
 
-        <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="container bg-white shadow-md p-5 form-layout" dir="auto">
 
-            <h3> <i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; Profile management </h3>
+            <h3> <i class="fa fa-address-book" aria-hidden="true"></i> &nbsp; {% trans 'Profile management' %} </h3>
 
-            <p> Manage your account effectively. </p>
+            <p> {% trans 'Manage your account effectively.' %} </p>
 
             <hr>
             
@@ -43,11 +45,11 @@
 
         <br>
 
-        <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="container bg-white shadow-md p-5 form-layout" dir="auto">
 
-            <h4> Update your account </h4>
+            <h4> {% trans 'Update your account' %} </h4>
 
-            <p> Feel free to make changes to your account. </p>
+            <p> {% trans 'Feel free to make changes to your account.' %} </p>
 
             <hr>
 
@@ -68,7 +70,7 @@
                 <br> <br>
 
                 
-                <button type="submit" class="btn btn-primary navbar-btn text-white"> &nbsp; Update your account </button>
+                <button type="submit" class="btn btn-primary navbar-btn text-white"> &nbsp; {% trans 'Update your account' %} </button>
 
 
             </form>
@@ -79,15 +81,15 @@
         <br>
 
 
-        <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="container bg-white shadow-md p-5 form-layout" dir="auto">
 
-            <h4> Delete your account </h4>
+            <h4> {% trans 'Delete your account' %} </h4>
 
-            <p> Proceed if you wish to delete your account.</p>
+            <p> {% trans 'Proceed if you wish to delete your account.' %}</p>
 
             <hr>
 
-            <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'delete-account' %}"> Delete your account </a>
+            <a class="btn btn-primary navbar-btn text-white" type="button"  href="{% url 'delete-account' %}"> {% trans 'Delete your account' %} </a>
 
         </div>
 

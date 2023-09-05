@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'mathfilters',
     'crispy_forms',
     'crispy_bootstrap4',
+    'translated_fields',
+
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'

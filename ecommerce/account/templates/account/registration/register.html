@@ -3,6 +3,8 @@
 
 {% load static %}
 
+{% load i18n %}
+
 {% load crispy_forms_tags %}
 
 
@@ -29,11 +31,11 @@
 
         <br>
 
-        <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="container bg-white shadow-md p-5 form-layout" dir="auto">
 
-            <h3> Create your account </h3>
+            <h3> {% trans 'Create your account' %} </h3>
 
-            <h5> Purchase your favourite items today! </h5>
+            <h5> {% trans 'Purchase your favourite items today!' %} </h5>
 
             <hr>
             <br>
@@ -62,13 +64,13 @@
 
                 <br> <br>
                 
-                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> &nbsp; Create account </button>
+                <button type="submit" class="btn btn-primary navbar-btn text-white w-100 p-2"> &nbsp; {% trans 'Create account' %} </button>
 
                 <br> <br>
 
                 <div class="text-center">
 
-                    <a href="{% url 'my-login' %}"> Already have an account? </a>
+                    <a href="{% url 'my-login' %}"> {% trans 'Already have an account?' %} </a>
 
                 </div>
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 17:58+0200\n"
+"POT-Creation-Date: 2023-09-03 18:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,86 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\payment\models.py:12 .\payment\models.py:52
+msgid "full_name"
+msgstr "نام و نام خانوادگی"
+
+#: .\payment\models.py:14 .\payment\models.py:54
+msgid "email"
+msgstr "ایمیل"
+
+#: .\payment\models.py:16
+msgid "address1"
+msgstr "آدرس 1"
+
+#: .\payment\models.py:18
+msgid "address2"
+msgstr "آدرس 2"
+
+#: .\payment\models.py:20
+msgid "city"
+msgstr "شهر"
+
+#: .\payment\models.py:25
+msgid "state"
+msgstr "استان"
+
+#: .\payment\models.py:27
+msgid "zipcode"
+msgstr "کد پستی"
+
+#: .\payment\models.py:34 .\payment\models.py:65 .\payment\models.py:96
+msgid "user"
+msgstr "کاربر"
+
+#: .\payment\models.py:39 .\payment\models.py:40
+msgid "Shipping Address"
+msgstr "آدرس"
+
+#: .\payment\models.py:56
+msgid "shipping_address"
+msgstr "آدرس"
+
+#: .\payment\models.py:58
+msgid "amount_paid"
+msgstr "مبلغ پرداختی"
+
+#: .\payment\models.py:60
+msgid "date_ordered"
+msgstr "تاریخ سفارش"
+
+#: .\payment\models.py:70
+msgid "Orders"
+msgstr "سفارشات"
+
+#: .\payment\models.py:71
+msgid "Order"
+msgstr "سفارش"
+
+#: .\payment\models.py:84
+msgid "order"
+msgstr "سفارش"
+
+#: .\payment\models.py:86
+msgid "product"
+msgstr "محصول"
+
+#: .\payment\models.py:89
+msgid "quantity"
+msgstr "تعداد"
+
+#: .\payment\models.py:91
+msgid "price"
+msgstr "قیمت"
+
+#: .\payment\models.py:100
+msgid "Order Items"
+msgstr "آیتم های سفارش"
+
+#: .\payment\models.py:101
+msgid "Order Item"
+msgstr "آیتم سفارش"
 
 #: .\payment\templates\payment\checkout.html:34
 msgid "Complete your order"
@@ -29,10 +109,10 @@ msgstr "لطفا مشخصات خود را وارد کنید."
 msgid "Complete order"
 msgstr "تکمیل سفارش"
 
-#: .\payment\templates\payment\payment-failed.html:3
-msgid "payment failed"
-msgstr "پرداخت ناموفق"
+#: .\payment\templates\payment\payment-failed.html:36
+msgid "payment failed!"
+msgstr "پرداخت ناموفق!"
 
-#: .\payment\templates\payment\payment-success.html:3
-msgid "payment success"
-msgstr "پرداخت موفق"
+#: .\payment\templates\payment\payment-success.html:36
+msgid "payment success!"
+msgstr "پرداخت موفق!"

@@ -1,6 +1,9 @@
 {% load static %}
+
 {% load i18n %}
+
 {% get_current_language as LANGUAGE_CODE %}
+
 <!DOCTYPE html>
 
 <html>
@@ -35,7 +38,8 @@
 
     </head>
 
-    <title> {% trans "Edenthought"%} </title>
+    <title> {% trans "BlueBerry"%} </title>
+    <link rel="icon" type="image/x-icon" href="{% static 'media/images/favicon.png' %}">
 
 
     <nav class="navbar navbar-expand-lg bg-primary justify-content-center">
@@ -43,7 +47,8 @@
 
         <a class="navbar-brand main-heading text-white" href="{% url 'store' %}"> 
                 
-        &nbsp; &nbsp; Edenthought 
+        &nbsp; &nbsp; BleuBerry 
+        {% comment %} <img class="img-fluid" alt="Responsive image" src="{% static 'media/images/favicon.png' %}"> {% endcomment %}
         
         </a>
 
@@ -88,7 +93,7 @@
                         <li>
 
                             <a class="dropdown-item" href="{{category.get_absolute_url}}"> {{ category.name | capfirst }} </a>
-
+                            
                         </li>
 
                     {% endfor %}
@@ -110,7 +115,7 @@
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="{% trans "Search for products" %}">
                     <div class="input-group-append">
-                        <button class="input-group-text bg-transparent text-primary">
+                        <button class="btn btn-alert navbar-btn text-white">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -118,7 +123,7 @@
             </form>
         </div>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        {% comment %} <div class="collapse navbar-collapse" id="navbarCollapse">
                 
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
@@ -162,9 +167,53 @@
 
             </ul>
 
-        </div>
+        </div> {% endcomment %}
         
         <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item dropdown">
+                    
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    
+                        {% trans 'Language'%}
+                    
+                    </a>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <li>
+                            
+                            <a class="dropdown-item" href="{% url 'change-language' %}?lang=en&next=/en/{{request.path|slice:'4:'}}"> {% trans 'English' %} </a>
+                        
+                        </li>
+
+                        <li>
+                            
+                            <a class="dropdown-item" href="{% url 'change-language' %}?lang=fa&next=/fa/{{request.path|slice:'4:'}}"> {% trans 'Persian' %} </a>
+                        
+                        </li>
+                        
+                        {% comment %} {% for category in all_categories %}
+                        
+                        <li>
+
+                            <a class="dropdown-item" href="{{category.get_absolute_url}}"> {{ category.name | capfirst }} </a>
+
+                        </li>
+
+                    {% endfor %} {% endcomment %}
+        
+                    
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            
 
             
             <ul class="navbar-nav ms-auto">
