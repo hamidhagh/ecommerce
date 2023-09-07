@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-01 14:07+0200\n"
+"POT-Creation-Date: 2023-09-05 18:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\cart\templates\cart\cart-summary.html:20
+#: .\cart\templates\cart\cart-summary.html:22
 msgid "Shopping cart"
 msgstr "سبد خرید"
 
-#: .\cart\templates\cart\cart-summary.html:56
+#: .\cart\templates\cart\cart-summary.html:58
 msgid "Product"
 msgstr "محصول"
 
-#: .\cart\templates\cart\cart-summary.html:70
+#: .\cart\templates\cart\cart-summary.html:79
 msgid "Qty"
 msgstr "تعداد"
 
-#: .\cart\templates\cart\cart-summary.html:96
+#: .\cart\templates\cart\cart-summary.html:129
 msgid "Update"
 msgstr "به روز رسانی"
 
-#: .\cart\templates\cart\cart-summary.html:104
+#: .\cart\templates\cart\cart-summary.html:137
 msgid "Delete"
 msgstr "حذف"
 
-#: .\cart\templates\cart\cart-summary.html:131
+#: .\cart\templates\cart\cart-summary.html:166
+#: .\cart\templates\cart\cart-summary.html:170
 msgid "Total price:"
 msgstr "قیمت کل:"
 
-#: .\cart\templates\cart\cart-summary.html:135
+#: .\cart\templates\cart\cart-summary.html:176
 msgid "Proceed to checkout"
 msgstr "نهایی کردن سفارش"

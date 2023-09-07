@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-03 18:34+0200\n"
+"POT-Creation-Date: 2023-09-06 11:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,3 +116,11 @@ msgstr "پرداخت ناموفق!"
 #: .\payment\templates\payment\payment-success.html:36
 msgid "payment success!"
 msgstr "پرداخت موفق!"
+
+#: .\payment\templates\payment\payment-success.html:40
+msgid "Thank you for your purchase!"
+msgstr "از خرید شما متشکریم!"
+
+#: .\payment\templates\payment\payment-success.html:44
+msgid "We have emailed you your order information."
+msgstr "رسید خرید به ایمیل شما ارسال شد."

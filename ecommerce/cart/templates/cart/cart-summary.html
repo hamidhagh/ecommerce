@@ -6,6 +6,8 @@
 
 {% load i18n %}
 
+{% get_current_language as LANGUAGE_CODE %}
+
 {% load product_tags %}
 
 {% load mathfilters %}
@@ -55,8 +57,15 @@
               
                 <div class="col-6"> {% trans 'Product' %} </div>
               
-                <div class="col-6 text-end"><span class="h6 fw-bold">$ {{product.price|mul:item.qty}} </span></div>
+                {% if LANGUAGE_CODE == 'fa' %}
+
+                  <div class="col-6 text-end"><span class="h6 fw-bold">$ {{product.price|mul:item.qty|persian_numbers }} </span></div>
             
+                  {% else %}
+
+                  <div class="col-6 text-end"><span class="h6 fw-bold">$ {{product.price|mul:item.qty }} </span></div>
+
+                {% endif %}
               </div>
             
             </div>
@@ -70,25 +79,49 @@
                   <label for="select">{% trans 'Qty' %}</label>
 
                   &nbsp; 
+
+                  {% if LANGUAGE_CODE == 'fa' %}
+
+                    <select id="select{{product.id}}">
                   
-                  <select id="select{{product.id}}">
+                      <option selected>
                   
-                    <option selected>
+                          {{item.qty|persian_numbers}}
                   
-                        {{item.qty}}
+                      </option>
                   
-                    </option>
+                      <option value="">{{1|persian_numbers}}</option>
                   
-                    <option value="">{{1|persian_numbers}}</option>
+                      <option value="">{{2|persian_numbers}}</option>
                   
-                    <option value="">{{2|persian_numbers}}</option>
+                      <option value="">{{3|persian_numbers}}</option>
                   
-                    <option value="">{{3|persian_numbers}}</option>
+                      <option value="">{{4|persian_numbers}}</option>
                   
-                    <option value="">{{4|persian_numbers}}</option>
+                    </select>
+
+                    {% else %}
+
+                    <select id="select{{product.id}}">
                   
-                  </select>
+                      <option selected>
                   
+                          {{item.qty}}
+                  
+                      </option>
+                  
+                      <option value="">{{1}}</option>
+                  
+                      <option value="">{{2}}</option>
+                  
+                      <option value="">{{3}}</option>
+                  
+                      <option value="">{{4}}</option>
+                  
+                    </select>
+
+                  {% endif %}
+                    
                   <br> <br>
 
                   <button type="button" data-index="{{product.id}}"
@@ -127,8 +160,16 @@
 
 
       <div class="col-12 text-end" dir="auto">
- 
-        <div class="h6 fw-bold"> {% trans 'Total price:' %} $ <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} </div></div>
+
+        {% if LANGUAGE_CODE == 'fa' %}
+
+          <div class="h6 fw-bold"> {% trans 'Total price:' %} $ <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} </div></div>
+
+          {% else %}
+
+          <div class="h6 fw-bold"> {% trans 'Total price:' %} $ <div id="total" class="d-inline-flex"> {{cart.get_total}} </div></div>
+
+        {% endif %}
 
         <br>
 

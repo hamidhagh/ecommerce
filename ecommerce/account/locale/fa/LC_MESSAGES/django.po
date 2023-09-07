@@ -68,7 +68,7 @@ msgstr "حذف حساب کاربری"
 
 #: .\account\templates\account\delete-account.html:40
 msgid "Are you sure that you want to delete your account?"
-msgstr "آیا مطمعن هستید می خواهید جساب کاربری خود را حذف کنید؟"
+msgstr "آیا مطمعن هستید می خواهید حساب کاربری خود را حذف کنید؟"
 
 #: .\account\templates\account\delete-account.html:51
 #: .\account\templates\account\profile-management.html:86
