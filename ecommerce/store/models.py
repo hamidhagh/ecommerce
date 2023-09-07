@@ -7,7 +7,7 @@ from translated_fields import TranslatedField
 
 class Category(models.Model):
 
-    name = TranslatedField(models.CharField(_("name"),max_length=250, db_index=True, default='0'))
+    name = TranslatedField(models.CharField(_("name"),max_length=250, db_index=True))
 
     slug = models.SlugField(_("slug"),max_length=250, unique=True)
 
@@ -51,7 +51,7 @@ class Product(models.Model):
 
     slug = models.SlugField(_("slug"), max_length=255)
 
-    price = models.DecimalField(_("price"), max_digits=4, decimal_places=2)
+    price = models.PositiveIntegerField(_("price"))
 
     image = models.ImageField(_("image"), upload_to='images/')
 

@@ -28,7 +28,7 @@ class Store(generic.ListView):
 
     context_object_name = 'my_products'
 
-    paginate_by = 1
+    paginate_by = 5
 
 
 class AscendingPrice(generic.ListView):
@@ -38,7 +38,7 @@ class AscendingPrice(generic.ListView):
 
     context_object_name = 'my_products'
 
-    paginate_by = 1
+    paginate_by = 5
     
 # def ascending_price(request):
 #     all_products = Product.objects.all().order_by('price')
@@ -51,7 +51,7 @@ class DescendingPrice(generic.ListView):
 
     context_object_name = 'my_products'
 
-    paginate_by = 1
+    paginate_by = 5
 
 
 class AscendingTime(generic.ListView):
@@ -61,7 +61,7 @@ class AscendingTime(generic.ListView):
 
     context_object_name = 'my_products'
 
-    paginate_by = 1
+    paginate_by = 5
 
 
 
@@ -72,7 +72,7 @@ class DescendingTime(generic.ListView):
 
     context_object_name = 'my_products'
 
-    paginate_by = 1
+    paginate_by = 5
 
 
 

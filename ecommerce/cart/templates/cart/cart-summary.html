@@ -59,11 +59,11 @@
               
                 {% if LANGUAGE_CODE == 'fa' %}
 
-                  <div class="col-6 text-end"><span class="h6 fw-bold">$ {{product.price|mul:item.qty|persian_numbers }} </span></div>
+                  <div class="col-6 text-end"><span class="h6 fw-bold"> {{product.price|mul:item.qty|persian_numbers }} {% trans 'Toman' %} </span></div>
             
                   {% else %}
 
-                  <div class="col-6 text-end"><span class="h6 fw-bold">$ {{product.price|mul:item.qty }} </span></div>
+                  <div class="col-6 text-end"><span class="h6 fw-bold"> {{product.price|mul:item.qty }} {% trans 'Toman' %} </span></div>
 
                 {% endif %}
               </div>
@@ -163,11 +163,11 @@
 
         {% if LANGUAGE_CODE == 'fa' %}
 
-          <div class="h6 fw-bold"> {% trans 'Total price:' %} $ <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} </div></div>
+          <div class="h6 fw-bold"> {% trans 'Total price:' %} <div id="total" class="d-inline-flex"> {{cart.get_total|persian_numbers}} {% trans 'Toman' %} </div></div>
 
           {% else %}
 
-          <div class="h6 fw-bold"> {% trans 'Total price:' %} $ <div id="total" class="d-inline-flex"> {{cart.get_total}} </div></div>
+          <div class="h6 fw-bold">  {% trans 'Total price:' %} <div id="total" class="d-inline-flex"> {{cart.get_total}} {% trans 'Toman' %} </div></div>
 
         {% endif %}
 

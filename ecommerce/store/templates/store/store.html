@@ -79,7 +79,7 @@
           <br>
           
 
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-3" dir="auto">
     
             
             {% for product in my_products %}
@@ -103,7 +103,7 @@
 
                       <div class="d-flex justify-content-between align-items-center">
                 
-                        <h5> $ {{ product.price|persian_numbers }} </h5>
+                        <h5> {{ product.price|persian_numbers }} {% trans 'Toman' %} </h5>
                 
                       </div>
 
@@ -111,7 +111,7 @@
 
                       <div class="d-flex justify-content-between align-items-center">
                 
-                        <h5> $ {{ product.price }} </h5>
+                        <h5> {{ product.price }} {% trans 'Toman' %} </h5>
                 
                       </div>
 

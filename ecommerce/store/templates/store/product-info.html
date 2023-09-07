@@ -23,7 +23,7 @@
             
             </div>
 
-            <div class="col-md-7 col-lg-7 ps-md-3 ps-lg-5">
+            <div class="col-md-7 col-lg-7 ps-md-3 ps-lg-5" dir="auto">
 
                 <h1 class="mb-0 h4"> {{ product.title }}  </h1>
 
@@ -47,11 +47,11 @@
 
                             {% if LANGUAGE_CODE == 'fa' %}
 
-                                <div class="col-6 text-end"><span class="h4 fw-bold">$ {{ product.price|persian_numbers }} </span></div>
+                                <div class="col-6 text-end"><span class="h4 fw-bold"> {{ product.price|persian_numbers }} {% trans 'Toman' %} </span></div>
 
                                 {% else %}
 
-                                <div class="col-6 text-end"><span class="h4 fw-bold">$ {{ product.price }} </span></div>
+                                <div class="col-6 text-end"><span class="h4 fw-bold"> {{ product.price }} {% trans 'Toman' %} </span></div>
 
                             {% endif %}    
 
