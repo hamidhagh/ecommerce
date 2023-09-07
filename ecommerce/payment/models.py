@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
+from django.utils import timezone
 from store.models import Product
 
 # Create your models here.
@@ -90,6 +91,7 @@ class OrderItem(models.Model):
 
     price = models.DecimalField(_("price"), max_digits=8, decimal_places=2)    
 
+    datetime_created = models.DateTimeField(_('datetime_created'), default=timezone.now())
 
     # FK
 
