@@ -56,7 +56,7 @@ class Order(models.Model):
 
     shipping_address = models.TextField(_("shipping_address"), max_length=10000)
 
-    amount_paid = models.DecimalField(_("amount_paid"), max_digits=8, decimal_places=2)
+    amount_paid = models.BigIntegerField(_("amount_paid"), default=1)
 
     date_ordered = models.DateTimeField(_("date_ordered"), auto_now_add=True)
 

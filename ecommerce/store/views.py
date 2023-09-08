@@ -107,7 +107,7 @@ class SearchProduct(generic.ListView):
     template_name = 'store/search_product.html'
     def get_queryset(self):
         search = self.request.GET.get('q')
-        return Product.objects.filter(Q(description__icontains=search) | Q(title__icontains=search))
+        return Product.objects.filter(Q(title_en__icontains=search) | Q(title_fa__icontains=search))
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -116,7 +116,7 @@ class SearchProduct(generic.ListView):
 
         context['search'] = search
         
-        context['my_products'] = Product.objects.filter(Q(description__icontains=search) | Q(title__icontains=search))
+        context['my_products'] = Product.objects.filter(Q(title_en__icontains=search) | Q(title_fa__icontains=search))
         
         return context
 

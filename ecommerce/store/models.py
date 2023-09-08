@@ -51,7 +51,7 @@ class Product(models.Model):
 
     slug = models.SlugField(_("slug"), max_length=255)
 
-    price = models.PositiveIntegerField(_("price"))
+    price = models.BigIntegerField(_("price"), default=1)
 
     image = models.ImageField(_("image"), upload_to='images/')
 

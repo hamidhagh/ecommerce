@@ -33,7 +33,7 @@ urlpatterns = [
     # path('change_language', change_language, name='change-language'),
 ]
 
-#urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += i18n_patterns(
     path('', include('store.urls')),
